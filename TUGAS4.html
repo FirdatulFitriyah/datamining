@@ -144,6 +144,11 @@ const thebe_selector_output = ".output, .cell_output"
    TUGAS 5
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TUGAS6.html">
+   TUGAS 6
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -354,7 +359,33 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="tugas-4">
 <h1>TUGAS 4<a class="headerlink" href="#tugas-4" title="Permalink to this headline">#</a></h1>
-<p>Metode Naive Bayes</p>
+<p><strong>METODE NAIVE BAYES</strong></p>
+<p>Naive Bayes adalah algoritma machine learning untuk masalah klasifikasi. Ini didasarkan pada teorema probabilitas Bayes. Hal ini digunakan untuk klasifikasi teks yang melibatkan set data pelatihan dimensi tinggi. Beberapa contohnya adalah penyaringan spam, analisis sentimental, dan klasifikasi artikel berita.</p>
+<p>Algoritma Naive Bayes adalah teknik klasifikasi berdasarkan penerapan teorema Bayes</p>
+<p>dengan asumsi kuat bahwa semua prediktor independen satu sama lain. Secara sederhana dengan kata lain, asumsinya adalah bahwa kehadiran fitur di kelas tidak tergantung pada kehadiran fitur lain di kelas yang sama.</p>
+<p><strong>Pemodelan dengan Naive Bayes</strong></p>
+<p>Library Python, Scikit learn adalah library paling berguna yang membantu untuk membangun Naive Bayes model dengan Python. Berikut adalah tiga jenis model Naive Bayes di bawah Scikit library Python:</p>
+<p>a. Gaussian Naive Bayes</p>
+<p>Ini adalah pengklasifikasi Naive Bayes paling sederhana yang memiliki asumsi bahwa data dari masing-masing label diambil dari distribusi Gaussian sederhana.</p>
+<p>b. Multinomial Naive Bayes</p>
+<p>Pengklasifikasi Naive Bayes lain yang berguna adalah Multinomial Naive Bayes di mana fitur-fiturnya adalah diasumsikan diambil dari distribusi Multinomial sederhana. Naive Bayes semacam itu adalah paling sesuai untuk fitur yang mewakili jumlah diskrit.</p>
+<p>c. Bernoulli Naive Bayes</p>
+<p>Model penting lainnya adalah Bernoulli Naive Bayes di mana fitur diasumsikan biner (0s dan 1s). Klasifikasi teks dengan model ‘bag of words’ dapat menjadi aplikasi dari Bernoulli Naive Bayes.</p>
+<p><strong>Kelebihan dan Kekurangan</strong></p>
+<p>Berikut ini adalah beberapa kelebihan menggunakan pengklasifikasi Naive Bayes:</p>
+<ul class="simple">
+<li><p>Klasifikasi Naive Bayes mudah diimplementasikan dan cepat.</p></li>
+<li><p>Ini akan menyatu lebih cepat daripada model diskriminatif seperti regresi logistik.</p></li>
+<li><p>Membutuhkan lebih sedikit data pelatihan.</p></li>
+<li><p>Sifatnya sangat skalabel, atau skalanya linier dengan jumlah prediktor dan titik data.</p></li>
+<li><p>Dapat membuat prediksi probabilistik dan dapat menangani kontinu beserta diskrit data.</p></li>
+<li><p>Algoritma klasifikasi Naive Bayes dapat digunakan untuk biner maupun multi-kelas masalah klasifikasi keduanya.</p></li>
+</ul>
+<p>Berikut ini adalah beberapa kekurangan dari penggunaan pengklasifikasi Naive Bayes:</p>
+<ul class="simple">
+<li><p>Salah satu Kelemahan terpenting dari klasifikasi Naive Bayes adalah fiturnya yang kuat kemandirian karena dalam kehidupan nyata hampir tidak mungkin untuk memiliki seperangkat fitur yang benar-benar independen satu sama lain.</p></li>
+<li><p>Masalah lain dengan klasifikasi Naive Bayes adalah ‘frekuensi nol’ yang berarti bahwa jika variabel kategori memiliki kategori tetapi tidak diamati dalam data pelatihan set, maka model Naive Bayes akan menetapkan probabilitas nol untuk itu dan itu tidak akan dapat untuk membuat prediksi</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Naive Bayes Classification</span>
@@ -613,7 +644,7 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f6447554d50&gt;
 </pre></div>
 </div>
-<img alt="_images/TUGAS4_5_1.png" src="_images/TUGAS4_5_1.png" />
+<img alt="_images/TUGAS4_7_1.png" src="_images/TUGAS4_7_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
